@@ -11,5 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marianocr98/Proyecto-Integrador-Grupo-10-LosRikolinos-Spint3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Marianocr98/Proyecto-Integrador-Grupo-10-LosRikolinos-Spint3/issues"
+  },
+  "homepage": "https://github.com/Marianocr98/Proyecto-Integrador-Grupo-10-LosRikolinos-Spint3#readme"
 }
