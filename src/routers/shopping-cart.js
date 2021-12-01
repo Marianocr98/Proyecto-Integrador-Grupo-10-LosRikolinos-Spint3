@@ -1,8 +1,13 @@
 const express = require('express');
 const router = express.Router()
 
-const productController = require('../controllers/productController') 
+//***Variable con acceso al controllers */
+const cartController = require('../controllers/indexController') 
 
-router.get('/', productController.shoppingCart)
+
+//***Rutas para acceder al controler */
+router.get('/', cartController.shoppingCart)
+
+
 
 module.exports = router;
