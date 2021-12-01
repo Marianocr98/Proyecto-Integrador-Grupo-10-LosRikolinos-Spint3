@@ -1,1 +1,1 @@
- Presentable del link al tablero de trabajo del Sprint3 : 
+ Presentable del link al tablero de trabajo del Sprint3 : https://trello.com/b/1zpKh7P7/sprint-3
