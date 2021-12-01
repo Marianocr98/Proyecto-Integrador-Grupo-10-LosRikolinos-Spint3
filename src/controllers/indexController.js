@@ -13,7 +13,8 @@ const controllerIndex = {
         
         res.sendFile(path.join(__dirname, '../views/main/shopping-cart.html'));
     
-    }
+    },
+
 } 
 
 

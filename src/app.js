@@ -14,6 +14,7 @@ app.listen(process.env.PORT || 3000 , ()=>{
 const mainRutas = require('./routers/index')
 const rutaShoppingCart = require('./routers/shopping-cart')
 const rutaMenu = require('./routers/menu',)
+const rutaUser = require('./routers/user') /*airu*/ 
 
 
 
@@ -22,6 +23,7 @@ const rutaMenu = require('./routers/menu',)
 app.use('/', mainRutas);
 app.use('/shopping-cart', rutaShoppingCart)
 app.use('/menu',rutaMenu)
+app.use('/', rutaUser) /*airu - ahhh*/ 
 
 
 
