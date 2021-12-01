@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
-app.use(express.static('public'));
+app.use(express.static('../public'));
 
 app.listen(process.env.PORT || 3000 , ()=>{
     console.log('Servidor funcionando');
 });
 
 app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/index.html');
+    res.sendFile(__dirname + '/views/main/index.html');
 });
 
 app.get('/productos', (req,res)=>{
@@ -20,10 +20,15 @@ app.get('/register', (req,res)=>{
 app.get('/login', (req,res)=>{
     res.sendFile(__dirname + '/views/login.html');
 });
-
+/**
 app.get('/shopping-cart', (req,res)=>{
     res.sendFile(__dirname + '/views/shopping-cart.html');
 });
+ */
+
+const rutaShoppingCart = require('./routers/shopping-cart')
+
+app.use('/shopping-cart', rutaShoppingCart)
 
 app.get('/menu', (req,res)=>{
     res.sendFile(__dirname + '/views/menu.html');
