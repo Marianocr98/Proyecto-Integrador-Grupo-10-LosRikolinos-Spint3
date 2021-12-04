@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/views/login.html">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/views/register.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Los Rikolinos - Registro</title>
+    <title>Los Rikolinos - login</title>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/styles481.css">
-    <link rel="stylesheet" href="/css/styles769.css">
-
 
 </head>
+
 <body>
 
     <!-- Inicio del Header -->
@@ -47,8 +45,8 @@
                     <a href="/">Home</a>
                     <a href="/menu">Menu</a>
                     <a href="/productos">Productos</a>
-                    <a href="/#Nosotros">Nosotros</a>
-                    <a href="/#footer">Contacto</a>
+                    <a href="#Nosotros">Nosotros</a>
+                    <a href="#footer">Contacto</a>
                 </div>
 
                 <div class="buscador">
@@ -98,64 +96,49 @@
 
     <!-- Inicio del Main -->
 
-    <main>
+    <main> 
         <section class="top-main">
             <!-- icono usuario  -->
             <div class="usuario">
                 <i class="far fa-user-circle"></i>
             </div>
         </section>
-        <!-- Titulo Registro...  -->
-        <p class="register-user">Registrarse</p>
-        <!-- Comienza el formulario  -->
-        <form action="/login.html" method="POST">
-        <!-- Poner nombre y apellido de usuario  -->
-        <div class="name-user">
-            <label for="nombre"></label>
-            <input type="text" placeholder="Nombre" name="usuario" id="nombre" required>
-            <input type="text" placeholder="Apellido" name="usuario" id="apellido" required>
-            </div>
+        <!-- iniciar sesión...  -->
+        
+        <p class="login-user">Iniciar sesión</p>
+        <!-- inicio de sesion  -->
+        <form action="/index.html" method="POST">
 
-            <section >
-            <!-- Poner email de usuario  -->
-                <div class="email-password">
-                <label for="email"></label>
-                <input type="email, tel" placeholder="Correo electronico o número de teléfono" name="email" id="email" required>
-                
-                <!-- Poner contraseña de usuario  -->
-                    <label for="password"></label>
-                    <input type="password" placeholder="Escribe tu contraseña" name="password" id="password" required>
-                
-                    <!-- Poner contraseña de usuario, confirmar  -->
-                    <label for="password"></label>
-                    <input type="password" placeholder="Confirmar tu contraseña" name="password" id="password" required>
-                </div>
+        <!-- Poner nombre de usuario  -->
+        <div class="padre-input">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Nombre de usuario o e-mail" name="usuario" id="nombre">
+        <!-- Poner contraseña  -->
+        
+        <label for="password"></label>
+        <input type="password" placeholder="Contraseña" name="password" id="password">
+        </div>
+        <!-- Boton de inicio de sesión  -->
+        <div class="olvidaste-contra">
+            <a href="">olvidaste tu contraseña?</a>
+        </div>
 
-            </section>
-            <!-- Boton de Registro -->
         <section class="buton">
-            <input type="submit" value="Registrarme">
-            </section>
+        <input type="submit" value="Iniciar sesión">
+        </section>
+    
 
-            <hr class="hr">
+        <hr class="hr">
 
-            <div class="link">
-                <p>¿Tenés cuenta?</p>
-                <a class="link" href="/login">Iniciar sesión</a>
-            </div>
+        <div class="link">
+            <p>¿No tenés cuenta aún?</p>
+            <a class="link" href="/register">Registrate</a>
+        </div>
+
         </form>
-
     </main>
 
     <!-- Fin del Main -->
-
-    <!-- Inicio del Footer -->
-
-    <footer>
-        
-    </footer>
-
-    <!-- Fin del Footer -->
     
 </body>
 </html>
