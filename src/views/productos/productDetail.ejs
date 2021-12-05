@@ -31,19 +31,19 @@
 
         <section class="container-productDetail">
             <div class="container-img">
-                <img src="/img/empanada-jamon-y-queso.jpg" alt="Empanada de jamon y queso">
+                <img src="<%= detail.image  %> " alt="<%= detail.imgDescription %> ">
             </div>
 
             <div class="container-description">
-                <h2>Empanadas de Jamón y Queso</h2>
+                <h2>Empanadas de <%= detail.title  %> </h2>
                     <div class="description">
                         <p>
-                            Empanadas de jamón con extra queso
+                            <%= detail.description  %> 
                         </p>
                     </div>
                 <div class="container-precio">
                     <p>Precio</p>
-                    <p>$199,00</p>
+                    <p>$<%= detail.price  %> ,00</p>
                 </div>
 
                 <div class="container-sumador_addCart">
