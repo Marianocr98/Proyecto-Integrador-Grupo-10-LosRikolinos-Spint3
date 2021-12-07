@@ -10,7 +10,10 @@ const productController = {
     },
     shoppingCart : (req,res)=>{
         res.render('./productos/shopping-cart');
-    }
+    }, 
+    create: (req,res)=>{
+        res.render('./admin/create');
+    },
 }
 
 const products = [

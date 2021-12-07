@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/create.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Cargar nuevos productos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('../partials/header') %> 
+
+    <main>
+        <section class="top">
+            <div class="admin">
+                <p class="create">Subir productos:</p>
+            </div>
+        </section>
+        <form action="" method="POST">
+            <div class="padre-create">
+                <label for="name-product">Nombre:</label>
+                <input type="text" placeholder="Nombre del producto" name="name-product" id="name-product">
+
+                <label for="descrption">Descripción:</label>
+                <input type="text" placeholder="Descripción del producto" name="description" id="description">
+
+                <div class="img-product">
+                <label for="img-product">Imagen del producto:</label>
+                <input type="file" name="img-product" accept=".jpg">
+                </div>
+
+                <div class="category">
+                <label for="category">Categoria:</label>
+                <select name="category" id="category">
+                    <option value="hamburguer">Hamburguesas</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="empanada">Empanadas</option>
+                    <option value="ravioles">Ravioles</option>
+                    <option value="asado">Asado</option>
+                    <option value="postre">Postres</option>
+                    <option value="bebidas">Bebidas</option>
+                </select>
+                </div>
+
+                <label for="price"></label>
+                <input type="number" placeholder="Precio" name="price" id="price">
+
+                <div class="button-admin">
+
+                <input type="reset" value="Cancelar">
+                <input type="submit" value="Crear producto">
+
+                </div>
+            </div>
+        </form>
+        <div class="product-add">
+            
+        </div>
+    </main>
+    <footer>
+        <%- include('../partials/footer-user') %> 
+    </footer>
+    
+</body>
+</html>
