@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/css/styles-menu.css">
     
     <title>Los Rikolino - Menu</title>
-    <link rel="stylesheet" href="/css/styles.css">
 
 </head>
 
@@ -27,75 +26,19 @@
     <main>
         <h2>Menu</h2>
         <section class = "main-section">
+            <% categorias.forEach(element => { %>
                 <article class = "article">
-                    <div class="padre-articulos">
-
-                        <h3 class = "categorias">Hamburguesas</h3>
-                        <div class="contenedor-img">
-                            <img src="/img/hamburguesa1.jpg" alt="">
-                        </div>
-
-                    </div>
-                </article>
-            
-                <article class = "article">
-                    <div class="padre-articulos">
-
-                        <h3 class = "categorias">Pizza</h3>
-                        <div class="contenedor-img">
-                            <img src="/img/pizza.jpeg" alt="">
-                        </div>
-
-                    
-                    </div>
-                </article>
-                
-                <article class = "article">
-                    <div class="padre-articulos">
-
-                        <h3 class = "categorias">Ravioles</h3>
-                        <div class="contenedor-img">
-                            <img src="/img/ravioles.jpeg" alt="">
-                        </div>
-                    
-                    </div>
-                </article>
-            
-                <article class = "article">
-                    <div class="padre-articulos">
-                    
-                        <h3 class = "categorias">Empanadas</h3>
-                        <div class="contenedor-img">
-                            <a href="/productos">
-                                <img src="/img/empanadas.jpeg" alt="Empanadas">
+                        <a href="/menu/<%=element.id%>">
+                            <div class="padre-articulos">
+                                <h3 class = "categorias"><%=element.categoria%> </h3>
+                                <div class="contenedor-img">
+                                    <img src="/img/<%=element.image%>" alt="<%=element.textoAlternativo %> ">
+                                </div>
                             </a>
-                        </div>
-                    
-                    </div>
+                            </div>
                 </article>
-            
-    
-                <article class = "article">
-                    <div class="padre-articulos">
-                    
-                        <h3 class = "categorias">Asado</h3>
-                        <div class="contenedor-img">
-                            <img src="/img/carneasada.jpeg" alt="">
-                        </div>
-                    
-                    </div>
-                </article>
-                
-                <article class = "article">
-                    <div class="padre-articulos">
-                    
-                        <h3 class = "categorias">Bebidas</h3>
-                        <div class="contenedor-img">
-                            <img src="/img/coctel.jpg" alt="">
-                        </div>
-                    
-                    </div>
-                </article>
+                <% }) %>
+
             </section>  
     </main>
 
