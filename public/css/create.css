@@ -1,0 +1,88 @@
+main {    
+    width: 100%;
+    margin: 0 auto;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+p.create{
+    font-size: 35px;
+}
+
+label{
+    font-size: 20px;
+}
+
+.padre-create{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px;
+    
+}
+
+
+.padre-create input{
+    border-radius: 15px;
+    padding: 12px;
+    width: 95%;
+    margin: 20px auto;
+    font-size: 20px;
+    
+}
+
+.img-product input{
+    display: flex;
+    margin-left:0px ;
+    font-size: 15px;
+    width: 500px;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    width: 250px;
+}
+
+select#category{
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-admin{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    justify-content: space-between;
+    margin: auto 120px;
+    width: 50%;
+}
+
+.button-admin input{
+    padding: 5px;
+    border-radius: 0px;
+    width: 45%;
+    font-size: 15px;
+}
+
+@media (min-width: 769px) {
+
+    main{
+        width: 500px;
+    }
+}
