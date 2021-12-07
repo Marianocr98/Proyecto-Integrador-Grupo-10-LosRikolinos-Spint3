@@ -9,9 +9,9 @@ app.set('views', 'views');
 
 
 /* Variable para acceso a rutas*/
-const mainRutas = require('./routers/index');
-const rutaUser = require('./routers/user') /*airu*/ 
-const products = require('./routers/products');
+const mainRutas = require('./routers/indexRouter');
+const rutaUser = require('./routers/userRouter') /*airu*/ 
+const products = require('./routers/productsRouter');
 
 
 

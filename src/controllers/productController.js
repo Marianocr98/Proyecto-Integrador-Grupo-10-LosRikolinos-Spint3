@@ -6,8 +6,9 @@ const productController = {
     },
     productDetail: (req, res) => {
         let detalle = products.find( element => element.id == req.params.id); 
-        res.render('./productos/productDetail', {detail: detalle});
+        res.render('./productos/productDetail', {detail: detalle,});
     },
+    
     shoppingCart : (req,res)=>{
         res.render('./productos/shopping-cart');
     }, 
@@ -17,12 +18,14 @@ const productController = {
     productsPizza : (req,res) => {
         res.render('./productos/productPizza',{productPizza : productsPizza})
     },
+    productsBebidas : (req,res) => {
+        res.render('./productos/bebidas',{name : productsDrinks })
+    }
 }
 
 const products = [
     {
         id: 1,
-        direction: '/productDetail/1',
         title: 'Jamón y Queso',
         image: '/img/empanada-jamon-y-queso.jpg',
         imgDescription: 'Empanadas jamon y queso',
@@ -31,16 +34,14 @@ const products = [
     },
     {
         id: 2,
-        direction: '/productDetail/2',
         title: 'Pollo',
         image: '/img/empanadas.jpeg',
         imgDescription: 'Empanadas fritas',
         description: '',
-        price: 90
+        price: 8000
     },
     {
         id: 3,
-        direction: '/productDetail/3',
         title: 'Carne',
         image: '/img/Empanada-de-Carne.jpg',
         imgDescription: 'Empanadas de carne',
@@ -49,7 +50,6 @@ const products = [
     },
     {
         id: 4,
-        direction: '/productDetail/4',
         title: 'Choclo',
         image: '/img/empanadas2.jpeg',
         imgDescription: 'Empanadas al horno',
@@ -58,7 +58,6 @@ const products = [
     },
     {
         id: 5,
-        direction: '/productDetail/5',
         title: 'Arabes',
         image: '/img/empanadas-arabes.jpg',
         imgDescription: 'Empanadas Arabes',
@@ -67,22 +66,67 @@ const products = [
     },
     {
         id: 6,
-        direction: '/productDetail/6',
         title: 'Humita',
         image: '/img/empanadas-humita.jpg',
         imgDescription: 'Empanadas humita',
         description: '',
         price: 100
-    }
+    },
+    
 ]
 
 const productsPizza = [
     {
-        id: "Pizza",
+        id: "",
         title: 'Muzzarella',
         image: 'pizza.jpeg',
         imgDescription: 'Grande de Muzzarella',
+        price: 399
+    },
+    {
+        id: "Napolitana",
+        title: 'Napolitana',
+        image: 'napolitana.jpg',
+        imgDescription: 'Grande de Muzzarella',
+        price: 399
+    },
+    {
+        id: "Calabresa",
+        title: 'Calabresa',
+        image: 'calabresa.jpg',
+        imgDescription: 'Grande de Muzzarella',
+        price: 449
+    },
+    {
+        id: "Fugaseta",
+        title: 'Fugaseta',
+        image: 'fugazzeta.jpg',
+        imgDescription: 'Grande de Muzzarella',
+        price: 459
+    },
+    {
+        id: "Italiana",
+        title: 'Italiana',
+        image: 'pizzas.jpeg',
+        imgDescription: 'Grande de Muzzarella',
+        price: 479
+    },
+    {
+        id: "Grande-de-Muzza",
+        title: 'Grande de Muzza',
+        image: 'grandeDeMuzza.jpg',
+        imgDescription: 'Grande de Muzzarella',
+        price: 499
+    },
+]
+const productsDrinks = [
+    {
+        id: "Bebida",
+        title: 'Bebida',
+        image: 'vino.jpg',
+        imgDescription: 'Vino',
         price: 199
     },
 ]
+
 module.exports = productController;

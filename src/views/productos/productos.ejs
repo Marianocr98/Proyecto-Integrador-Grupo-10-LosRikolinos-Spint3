@@ -25,7 +25,7 @@
             <h2>
                 Empanadas
             </h2>
-
+            
             <form action="" method="">
                 <!-- <label for=""></label> -->
                 <select name="precios" id="">
@@ -35,7 +35,7 @@
                 </select>
             </form>
         </div>
-
+        
         <section class="container-articles">
 
             <% product.forEach(element => { %>
@@ -45,7 +45,7 @@
                     </a>
                     <div class="container-img-barrita">
                         <div class="container-img">
-                            <a href="<%= element.direction  %> ">
+                            <a href="/productDetail/<%= element.id%> ">
                                 <img src="<%= element.image %> " alt="<%= element.imgDescription %> ">
                             </a>
                             <h2> $<%= element.price %>,00 </h2>
@@ -57,10 +57,15 @@
                             <button>Añadir al carrito</button>
                         </div>
                     </div>
-                </article>
+            </article>
                 <% }) %>
-
+    
         </section>
+
+
+
+        
+
     </main>
 
     <!-- Fin del Main -->

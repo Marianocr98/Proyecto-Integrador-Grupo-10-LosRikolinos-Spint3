@@ -1,17 +1,43 @@
 //**Rutas de acceso disponnible para el usuario  */
 const controllerIndex = {
     home: (req,res) =>{
-        res.render('./menu/index');
+        res.render('./menu/index', {homeProducts: home});
     },
     menu: (req,res) =>{
         res.render('./menu/menu', {categorias : categoria} )
     },
 } 
 
-module.exports =  controllerIndex;
+
+const home = [
+    {
+        titulo: "Hamburguesa",
+        direccion: "/productos/#hamburguesas",
+        image:"/img/hamburguesa2.jpg",
+        descripcion:"Disfrute de las mejores Hamburgesas"
+    },
+    {
+        titulo: "Parrilla",
+        direccion: "/productos",
+        image:"/img/carneasada.jpeg",
+        descripcion:"Especializados en parrilla"
+    },
+    {
+        titulo: "Postres",
+        direccion: "/productos",
+        image:"/img/helado.jpg" ,
+        descripcion:"Postres unicos y originales"
+    },
+    {
+        titulo: "Bebidas",
+        direccion: "/productos",
+        image:"/img/vino.jpg",
+        descripcion:"Bebidas de todo tipo"
+    }
+]
 
 
-//** */
+
 const categoria = [
     {
         id: "Hamburguesa",
@@ -50,3 +76,5 @@ const categoria = [
         textoAlternativo: 'Seccion de bebidas',
     }
 ]
+
+module.exports =  controllerIndex;
