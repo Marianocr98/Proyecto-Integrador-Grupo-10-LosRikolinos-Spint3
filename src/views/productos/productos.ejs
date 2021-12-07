@@ -45,7 +45,7 @@
                     </a>
                     <div class="container-img-barrita">
                         <div class="container-img">
-                            <a href="<%= element.direction  %> ">
+                            <a href="/productDetail/<%= element.id%> ">
                                 <img src="<%= element.image %> " alt="<%= element.imgDescription %> ">
                             </a>
                             <h2> $<%= element.price %>,00 </h2>
@@ -65,39 +65,7 @@
 
 
         
-        <div class="container-title-form">
-            <h2 id="hamburguesas">
-                Hamburguesas
-            </h2>
-        </div>
-        
-        <section class="container-articles">
 
-            <% hamburge.forEach(element => { %>
-            <article class="container-productos">
-                    <a href="">
-                        <h4> <%= element.title  %> </h4>
-                    </a>
-                    <div class="container-img-barrita">
-                        <div class="container-img">
-                            <a href="<%= element.direction  %> ">
-                                <img src="<%= element.image %> " alt="<%= element.imgDescription %> ">
-                            </a>
-                            <h2> $<%= element.price %>,00 </h2>
-                        </div>
-                        <div class="container-barrita">
-                            <button>-</button>
-                            <p>1</p>
-                            <button>+</button>
-                            <button>Añadir al carrito</button>
-                        </div>
-                    </div>
-            </article>
-                <% }) %>
-    
-        </section>
-        
-    
     </main>
 
     <!-- Fin del Main -->
