@@ -14,6 +14,9 @@ const productController = {
     create: (req,res)=>{
         res.render('./admin/create');
     },
+    productsPizza : (req,res) => {
+        res.render('./productos/productPizza',{productPizza : productsPizza})
+    },
 }
 
 const products = [
@@ -73,4 +76,13 @@ const products = [
     }
 ]
 
+const productsPizza = [
+    {
+        id: "Pizza",
+        title: 'Muzzarella',
+        image: 'pizza.jpeg',
+        imgDescription: 'Grande de Muzzarella',
+        price: 199
+    },
+]
 module.exports = productController;

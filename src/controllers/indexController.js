@@ -14,37 +14,37 @@ module.exports =  controllerIndex;
 //** */
 const categoria = [
     {
-        id: 1,
+        id: "Hamburguesa",
         categoria: 'Hamburguesa',
         image: 'hamburguesa1.jpg',
         textoAlternativo: 'Menu de Hamburguesas',
     },
     {
-        id: 2,
+        id: "Pizza",
         categoria: 'Pizza',
         image: 'pizza.jpeg',
         textoAlternativo: 'Seccion de pizzas',
     },
     {
-        id: 3,
+        id: "Ravioles",
         categoria: 'Ravioles',
         image: 'ravioles.jpeg',
         textoAlternativo: 'Seccion de Ravioles',
     },
     {
-        id: 4,
+        id: "",
         categoria: 'Empanadas',
         image: 'empanadas.jpeg',
         textoAlternativo: 'Seccion de empanadas',
     },
     {
-        id: 5,
+        id: "Asado",
         categoria: 'Asado',
         image: 'carneasada.jpeg',
         textoAlternativo: 'Seccion de Asado',
     },
     {
-        id: 6,
+        id:"Bebidas",
         categoria: 'Bebidas',
         image: 'coctel.jpg',
         textoAlternativo: 'Seccion de bebidas',
