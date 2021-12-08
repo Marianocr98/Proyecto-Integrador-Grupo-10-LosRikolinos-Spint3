@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +10,11 @@
     <title>Los Rikolinos - Productos</title>
 
 </head>
-
 <body>
 
     <!-- Inicio del Header -->
 
-    <%- include('../partials/header')  %>
+    <%- include('../partials/header')  %> 
 
     <!-- Fin del Header -->
 
@@ -25,7 +23,7 @@
     <main>
         <div class="container-title-form">
             <h2>
-                Bebidas
+                Asado
             </h2>
 
             <form action="" method="">
@@ -40,44 +38,38 @@
 
         <section class="container-articles">
 
-            <% drink.forEach(element => { %>
+            <% asado.forEach(element => { %>
             <article class="container-productos">
-                <a href="">
-                    <h4> <%= element.title  %> </h4>
-                </a>
-                <div class="container-img-barrita">
-                    <div class="container-img">
-                        <a href="/productDetail/<%= element.id%> ">
-                            <img src="/img/<%=element.image %> " alt="<%= element.imgDescription %> ">
-                        </a>
-                        <h2> $<%= element.price %>,00 </h2>
+                    <a href="">
+                        <h4> <%= element.title  %> </h4>
+                    </a>
+                    <div class="container-img-barrita">
+                        <div class="container-img">
+                            <a href="/productDetail/<%=element.id %>  ">
+                                <img src="/img/<%=element.image %> " alt="<%= element.imgDescription %> ">
+                            </a>
+                            <h2> $<%= element.price %>,00 </h2>
+                        </div>
+                        <div class="container-barrita">
+                            <button>-</button>
+                            <p>1</p>
+                            <button>+</button>
+                            <button>Añadir al carrito</button>
+                        </div>
                     </div>
-                    <div class="container-barrita">
-                        <button>-</button>
-                        <p>1</p>
-                        <button>+</button>
-                        <button>Añadir al carrito</button>
-                    </div>
-                </div>
-            </article>
-            <% }) %>
+                </article>
+                <% }) %>
 
         </section>
-
-
-
-
-
     </main>
 
     <!-- Fin del Main -->
 
     <!-- Inicio del Footer -->
 
-    <%- include('../partials/footer')  %>
+    <%- include('../partials/footer')  %> 
 
     <!-- Fin del Footer -->
 
 </body>
-
 </html>
