@@ -58,7 +58,7 @@ const categoria = [
         textoAlternativo: 'Seccion de Ravioles',
     },
     {
-        id: "",
+        id: "Empanadas",
         categoria: 'Empanadas',
         image: 'empanadas.jpeg',
         textoAlternativo: 'Seccion de empanadas',
