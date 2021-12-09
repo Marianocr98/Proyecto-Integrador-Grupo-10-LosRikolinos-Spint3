@@ -27,8 +27,6 @@ h1.create{
 label{
     font-size: 25px;
     text-align: center;
-    color: chocolate;
-    
 }
 .padre-create{ 
     display: flex;
@@ -153,9 +151,12 @@ select{
 
 .padre-products-add{
     display: flex;
-    justify-content: space-between;
-    flex-direction: column-reverse;
+    flex-direction: column;
 
+}
+
+.container-create{
+    margin: 50px;
 }
 .container-product-create {
     border: 1px solid rgb(233, 167, 219);
