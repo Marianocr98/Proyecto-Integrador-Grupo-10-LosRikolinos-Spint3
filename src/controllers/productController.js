@@ -3,7 +3,7 @@ const path = require('path')
 const productController = {
     productDetail: (req, res) => {
         let detalle = products.find( element => element.id == req.params.id); 
-        res.render('./productos/productDetail', {detail: detalle,});
+        res.render('./productos/productDetail', {detail: detalle});
     },
     shoppingCart : (req,res)=>{
         res.render('./productos/shopping-cart');
