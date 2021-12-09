@@ -7,26 +7,29 @@
 
 ### COMENZAR A HACER:
 
--Hacer las tareas en su momento.
--Ser mas independientes.
+- Hacer las tareas en su momento
+
+- Ser mas independientes
 
 ### HACER MÁS:
 
--Estar actualizados.
--Moverse por el equipo.
+- Estar actualizados
+
+- Moverse por el equipo
 
 ### CONTINUAR HACIENDO:
 
--Seguir trabajando con los sprints.
--Usar el trello.
+- Seguir trabajando con los sprints
+
+- Usar el trello
 
 ### HACER MENOS:
 
--Crear ramas.
+- Crear ramas
 
 ### DEJAR DE HACER:
 
--Mariano quiere preocuparse menos.
--
+- Mariano quiere preocuparse menos
+
 
 
