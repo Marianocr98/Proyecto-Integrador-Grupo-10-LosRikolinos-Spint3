@@ -1,6 +1,11 @@
 const path = require('path')
 
 const productController = {
+
+    productos: (req,res) => {
+        res.render('./productos/productos' ,{productos:products})
+    },
+
     productDetail: (req, res) => {
         let detalle = products.find( element => element.id == req.params.id); 
         res.render('./productos/productDetail', {detail: detalle});
@@ -23,8 +28,8 @@ const productController = {
     productsAsado : (req,res) => {
         res.render('./productos/productAsado',{asado : productsAsado })
     },
-    productsRavioles : (req,res) => {
-        res.render('./productos/productRavioles',{ravioles : productsRavioles })
+    productsPastas : (req,res) => {
+        res.render('./productos/productPastas',{pastas : productsPastas })
     },
     productsEmpanadas: (req, res) => {
         res.render('./productos/productEmpanada', {empanada: productsEmpanadas});
@@ -33,13 +38,15 @@ const productController = {
 
 const products =[
     {
+        
         id: "Hambuguesa2.0",
         title: 'Hambuguesa2.0',
         image: 'hamburguesa.jpg',
         imgDescription: '',
         price: 499
     },
-    {
+    {   
+        
         id: "Hambuguesa3.0",
         title: 'Hambuguesa3.0 ',
         image: 'hamburguesa2.jpg',
@@ -74,14 +81,18 @@ const products =[
         imgDescription: 'Imagen de Grand Tasty',
         price: 799
     },
+
+
     {
+        
         id: "Muzza",
         title: 'Muzzarella',
         image: 'pizza.jpeg',
         imgDescription: 'Grande de Muzzarella',
         price: 399
     },
-    {
+    {   
+    
         id: "Napolitana",
         title: 'Napolitana',
         image: 'napolitana.jpg',
@@ -435,7 +446,7 @@ const productsPizza = [
     },
 ]
 
-const productsRavioles =[
+const productsPastas =[
     {
         id: "Noquis",
         title: 'Ñoquis',

@@ -23,7 +23,7 @@
     <main>
         <div class="container-title-form">
             <h2>
-                Empanadas
+                Productos
             </h2>
             
             <form action="" method="">
@@ -38,15 +38,16 @@
         
         <section class="container-articles">
 
-            <% product.forEach(element => { %>
+            <% productos.forEach(element => { %>
+            
             <article class="container-productos">
                     <a href="">
                         <h4> <%= element.title  %> </h4>
-                    </a>
+                    </a> 
                     <div class="container-img-barrita">
                         <div class="container-img">
                             <a href="/productDetail/<%= element.id%> ">
-                                <img src="<%= element.image %> " alt="<%= element.imgDescription %> ">
+                                <img src= "/img/<%= element.image %> " alt="<%= element.imgDescription %> ">
                             </a>
                             <h2> $<%= element.price %>,00 </h2>
                         </div>

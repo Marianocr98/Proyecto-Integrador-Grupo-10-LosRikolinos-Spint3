@@ -12,25 +12,25 @@ const controllerIndex = {
 const home = [
     {
         titulo: "Hamburguesa",
-        direccion: "/productos/#hamburguesas",
+        direccion: "/productos/Hamburguesa",
         image:"/img/hamburguesa2.jpg",
         descripcion:"Disfrute de las mejores Hamburgesas"
     },
     {
         titulo: "Parrilla",
-        direccion: "/productos",
+        direccion: "/productos/Asado",
         image:"/img/carneasada.jpeg",
         descripcion:"Especializados en parrilla"
     },
     {
-        titulo: "Postres",
-        direccion: "/productos",
-        image:"/img/helado.jpg" ,
+        titulo: "Pizza",
+        direccion: "/productos/Pizza",
+        image:"/img/pizzas.jpeg" ,
         descripcion:"Postres unicos y originales"
     },
     {
         titulo: "Bebidas",
-        direccion: "/productos",
+        direccion: "/productos/Bebidas",
         image:"/img/vino.jpg",
         descripcion:"Bebidas de todo tipo"
     }
@@ -52,8 +52,8 @@ const categoria = [
         textoAlternativo: 'Seccion de pizzas',
     },
     {
-        id: "Ravioles",
-        categoria: 'Ravioles',
+        id: "Pastas",
+        categoria: 'Pastas',
         image: 'ravioles.jpeg',
         textoAlternativo: 'Seccion de Ravioles',
     },
