@@ -7,7 +7,7 @@ main {
     flex-direction: row;
     justify-content: center;
 }
-p {
+h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -16,7 +16,7 @@ p {
     color: #fff;
 }
 
-p.create{
+h1.create{
     font-size: 40px;
     color: brown;
     padding-bottom: 30px;
@@ -30,10 +30,6 @@ label{
     color: chocolate;
     
 }
-
-
-
-
 .padre-create{ 
     display: flex;
     justify-content: center;
@@ -138,4 +134,73 @@ select{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+/*Productos creados*/
+
+.h2-add-create {
+    padding-top: 50px;
+    margin: 20px auto;
+}
+
+.h2-add-create h2 {
+    text-align: center;
+    font-size: 30px;
+    background: linear-gradient(90deg, rgba(9, 9, 7, 1) 0%, rgba(203, 28, 28, 1) 51%, rgba(9, 8, 7, 1) 100%);
+}
+
+/* ------------ */
+
+.padre-products-add{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+
+}
+.container-product-create {
+    border: 1px solid rgb(233, 167, 219);
+    border-radius: 5px;
+    display: flex;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgb(255 255 255 / 20%),
+    0 6px 20px 0 rgb(255 255 255 / 19%);
+}
+
+.container-img {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.container-img img {
+    height: 100%;
+}
+
+.info-create {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+}
+h3{
+    font-size: 25px;
+}
+.description-create{
+    padding-top: 15px;
+    font-size: 20px;
+}
+.p-create{
+    display: flex;
+    padding-bottom: 10px;
+}
+.price-create{
+    font-size: 20px;
+}
+p{
+    margin: auto 20px;
 }
