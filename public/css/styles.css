@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
     align-items: center;
     background: url("/img/fuegoHeader8.jpg") no-repeat;
     background-size: cover;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .contenedor-buscador-navbar{
@@ -81,10 +82,9 @@ body {
 
 
 .slider {
-	width: 95%;
+	width: 100%;
 	margin: auto;
 	overflow: hidden;
-    border-radius: 10%;
 }
 
 .slider li {
@@ -94,7 +94,7 @@ body {
 
 .slider img {
 	width: 100%;
-    height: 300px;
+    height: 200px;
 }    
 
 .slider ul {
@@ -338,9 +338,8 @@ animation: carrucel 14s infinite alternate linear;
     /*Inicio del Main*/
 
     .slider {
-        width: 95%;
+        width: 100%;
         margin: auto;
-        border-radius: 10%;
     }
 
     .slider li {
@@ -547,9 +546,8 @@ animation: carrucel 14s infinite alternate linear;
 
 
     .slider {
-        width: 95%;
+        width: 100%;
         margin: auto;
-        border-radius: 10%;
     }
 
     .slider li {
@@ -564,7 +562,7 @@ animation: carrucel 14s infinite alternate linear;
 }
 
 /* Empieza el diseño responsivo 990px */
-@media (min-width: 990px) {
+@media (min-width: 1024px) {
     .contenedor-buscador-navbar {
         display: block;
 
@@ -634,7 +632,7 @@ animation: carrucel 14s infinite alternate linear;
     .buscador input {
         height: 28px;
         width: 50%;
-        border-radius: 10px;
+        border-radius: 5px;
         border: none;
         transition: all 470ms;
     }
@@ -665,9 +663,8 @@ animation: carrucel 14s infinite alternate linear;
 
 
     .slider {
-        width: 95%;
+        width: 100%;
         margin: auto;
-        border-radius: 10%;
     }
 
     .slider li {
@@ -677,7 +674,7 @@ animation: carrucel 14s infinite alternate linear;
 
     .slider img {
         width: 100%;
-        height: 650px;
+        height: 500px;
     }
 
 
@@ -725,7 +722,7 @@ animation: carrucel 14s infinite alternate linear;
 
     .slider img {
         width: 100%;
-        height: 800px;
+        height: 500px;
     }
 
     .cuenta-registro {
